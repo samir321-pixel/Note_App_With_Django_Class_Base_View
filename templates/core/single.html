@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pt-5">
+                <h2 class="pt-5">{{ post.title }}</h2>
+                <h5>Description: </h5>
+                <div class="card">
+                    <p>{{ post.excerpt }}</p>
+                </div>
+                <p>published on: {{ post.updated }} by Admin.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

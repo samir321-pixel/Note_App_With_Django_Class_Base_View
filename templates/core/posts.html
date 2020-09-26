@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-brand">Notes Administration</div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="btn btn-outline-info my-2 my-sm-0" href="{% url 'core:add' %}">Add New Note</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                {% for post in post_list %}
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-body">
+                                <h4 class=""><a href="{% url 'core:single' post.pk %}">{{ post.title }}</a></h4>
+                                <p class="card-text"></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="{{ post.get_absolute_url }}" class="btn btn-sm btn-outline-primary" style="margin:5px;"
+                                           role="button" aria-pressed="true">View</a>
+                                        <a href="{% url 'core:edit' post.pk %}" class="btn btn-sm btn-outline-secondary"style="margin:5px;"
+                                           role="button" aria-pressed="true">Edit</a>
+                                        <a href="{% url 'core:delete' post.pk %}" class="btn btn-sm btn-outline-danger"style="margin:5px;"
+                                           role="button" aria-pressed="true">Delete</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
