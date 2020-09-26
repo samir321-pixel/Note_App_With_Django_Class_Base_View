@@ -1,0 +1,1 @@
+# Note_App_With_Django_Class_Base_View
