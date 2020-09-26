@@ -14,3 +14,15 @@ This project is built using Django and demonstrates the use of Class Based Views
 
 * DeleteView
 ![deleteview]("DeleteView of Notes")
+
+## Setup Instructions
+First make sure that you have the following installed.
+* Python 3 and virtualenv
+Now do the following to setup project
+
+# run migrate
+python manage.py migrate
+
+# run server
+To access webserver, run the following command
+python manage.py runserver
