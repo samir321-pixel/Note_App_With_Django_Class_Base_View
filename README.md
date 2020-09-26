@@ -23,6 +23,9 @@ Now do the following to setup project
 # run migrate
 python manage.py migrate
 
+# create superuser
+python manage.py createsuperuser
+
 # run server
 To access webserver, run the following command
 python manage.py runserver
