@@ -1,6 +1,6 @@
 # Note_App_With_Django_Class_Base_View
 This project is built using Django and demonstrates the use of Class Based Views using [Class Based Views in Django]
- ListView
+* ListView
 ![listview]("ListView for Notes")
 
 * CreateView
