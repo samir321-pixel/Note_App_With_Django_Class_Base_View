@@ -21,7 +21,7 @@ This project is built using Django and demonstrates the use of Class Based View.
 * Frontend
   * HTML
   * CSS
-  * React
+  * Bootstrap
 * Backend
   * Django
 * Database
