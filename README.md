@@ -1,5 +1,5 @@
-# Note_App_With_Django_Class_Base_View
 
+<h1 align="center">Note_App_With_Django_Class_Base_View</h1>
 ## Introduction
 This project is built using Django and demonstrates the use of Class Based View.
 * ListView
